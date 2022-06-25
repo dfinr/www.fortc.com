@@ -1,0 +1,30 @@
+{{ $quote_display := .page.Params.quote.display | default false }}
+{{ $quote_style := .page.Params.quote.style | default 1 }}
+{{ $quote_heading := .page.Params.quote.heading | default "" }}
+{{if eq $quote_display true}}
+{{ $js := "function showQuote() {\n" }}
+{{ $js = (print $js "var quote_text=new Array();\n" ) }}
+{{ $js = (print $js "var quote_source=new Array();\n" ) }}
+{{ range $i, $quote := getCSV "|" "quotes.csv"  }}
+    {{ $q := (index $quote 0) }}
+    {{ $s := (index $quote 1) }}
+    {{ $js = (print $js "quote_text[" $i "]=\"" $q "\";\n" ) }}
+    {{ $js = (print $js "quote_source[" $i "]=\"" $s "\";\n" ) }}
+{{ end }}
+{{ $js = (print $js "i = Math.floor(Math.random() * quote_text.length);\n") }}
+{{if eq $quote_style 1}}
+    {{ $js = (print $js "document.getElementById('random_quote').innerHTML=quote_text[i] + '<br />' + quote_source[i];\n") }}
+{{end}}
+{{if eq $quote_style 2}}
+    {{ $js = (print $js "document.getElementById(\"random_quote\").innerHTML=") }}
+    {{ $js = (print $js "'<div class=\"quote_heading\">" $quote_heading "</div>' + ") }}
+    {{ $js = (print $js "'<div class=\"quote_text\">' + quote_text[i] + '</div>' + ") }}
+    {{ $js = (print $js "'<div class=\"quote_source\">' + quote_source[i] + '</div>';\n") }}
+{{end}}
+{{ $js = (print $js "}\n") }}
+{{ $js = (print $js "window.onload = function() {\n") }}
+{{ $js = (print $js "    showQuote();\n") }}
+{{ $js = (print $js "};\n") }}
+<div id="random_quote"></div>
+<script>{{ $js | safeJS }}</script>
+{{end}}
