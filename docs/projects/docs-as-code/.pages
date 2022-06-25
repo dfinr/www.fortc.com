@@ -1,0 +1,7 @@
+title: Docs-as-Code
+
+nav:
+    - overview.md
+    - vale
+    - netlify
+    - hugo
