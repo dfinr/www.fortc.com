@@ -1,5 +1,5 @@
 ---
-title: About David
+title: Home
 revision_date: June 18 2022
 hide:
   - navigation
@@ -7,9 +7,11 @@ hide:
   - footer
 ---
 
+# About David
+
 I'm a consultant, software developer, and technical editor. My current gig is managing the Technical Communications team at [Constant](https://www.constant.com/), a cloud infrastructure provider with 25 global locations.
 
-![David Finster](_media/David-16x9@0.5x.jpg){ width=50% align=left loading=lazy }
+![David Finster](assets/media/David-16x9@0.5x.jpg){ width=50% align=left loading=lazy }
 
 At the beginning of the 2020 pandemic, I closed my consulting business that I'd operated for the previous 16 years. I've also led developer teams at Levi Strauss & Co., Thomson Reuters, and Corel.
 

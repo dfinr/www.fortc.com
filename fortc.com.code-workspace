@@ -13,6 +13,7 @@
             "MD007": { "indent": 4},
             "MD013": false,
             "MD014": false,
+            "MD025": false,
             "MD026": false,
             "MD033": false,        
             "MD040": false,
@@ -21,7 +22,7 @@
         "markdownlint.run": "onSave",
         "vale.core.useCLI": true,
         "files.autoSave": "afterDelay",
-        "files.autoSaveDelay": 1000,
+        "files.autoSaveDelay": 5000,
         "editor.useTabStops": false,
         "editor.detectIndentation": false,
         "github.copilot.enable" : {

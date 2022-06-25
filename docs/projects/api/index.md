@@ -1,12 +1,12 @@
 ---
-title: Vultr API Documentation
+title: Vultr's API Documentation
 revision_date: June 19, 2022
-tags:
-  - Technical Writing
-hide:
-  - navigation
-  - toc
-  - footer
+#tags:
+#  - Technical Writing
+#hide:
+#  - navigation
+#  - toc
+#  - footer
 ---
 Version 2 of the [Vultr API](https://www.vultr.com/api/) is a major upgrade that brings Vultr into alignment with industry best practices. 
 

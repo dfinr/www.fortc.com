@@ -1,12 +1,12 @@
 ---
 title: Vultr Style Guide
 revision_date: June 19, 2022
-tags:
-  - Technical Writing
-hide:
-  - navigation
-  - toc
-  - footer
+#tags:
+#  - Technical Writing
+#hide:
+#  - navigation
+#  - toc
+#  - footer
 ---
 I'm the author of the [Vultr Style Guide](https://www.vultr.com/docs/vultr-docs-style-guide) and the companion [Vultr Markdown Toolkit](https://github.com/dfinr/vultr-mdtk).
 
