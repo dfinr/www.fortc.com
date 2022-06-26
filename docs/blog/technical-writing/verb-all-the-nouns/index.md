@@ -11,11 +11,13 @@ tags:
 
 ![Featured](_media/verb-all-the-nouns.webp)
 
-The best technical writing is unobtrusive. It doesn't distract the reader from the content. However, excess word clutter and weak verbs can obscure the content and confuse the reader. You can improve your articles by avoiding nouns derived from verbs. Often these are used as direct objects that receive their action from a weaker verb.
+The best technical writing is unobtrusive, with clear sentences that don't distract the reader from the content. By removing excess word clutter and weak verbs, you can simplfy the sentence structure, which makes the material easier to understand. One way to improve your articles is by avoiding nouns derived from verbs. 
 
 ## Examples of Nounified Verbs
 
-Some verbs are converted to nouns by adding suffixes like -ion, -th, and -ment.
+What does it mean to derive a noun from a verb?
+
+Some verbs are converted to nouns by adding suffixes like **-ion**, **-th**, and **-ment**.
 
 | Verb | Noun |
 |----|----|
@@ -25,30 +27,27 @@ Some verbs are converted to nouns by adding suffixes like -ion, -th, and -ment.
 | grow | growth |
 | abandon | abandonment |
 
-Some verbs like *control*, *increase*, and *decrease* can also be nouns without suffixes or changes.
+Some verbs can also be used as nouns without changing any spelling. For example:
+
+* control
+* increase
+* decrease
+
+These "nounified verbs" are often used as direct objects that receive their action from a weaker verb.
 
 ## What's a Direct Object?
 
 Consider the following example:  
 > **You can perform the software installation in one step.**
 
-In this sentence, *perform* is the verb acting on the direct object, *installation*. By converting the noun *installation* back to its verb root, you simplify the sentence:  
+In this sentence, *perform* is the verb acting on the direct object, *installation*. The noun, _installation_, is derived from the verb root, _install_.
+
+You can simplify the sentence by converting the noun *installation* back to its verb root:
 > **You can install the software in one step.**
 
 ## Strong Verbs Made Weak
 
-Some verbs aren't inherently weak, but they become weak when acting on a nounified verb form. Some popular examples are: achieve, bring, cause, create, deliver, do, give, make, obtain, offer, perform, produce, provide, show, and take.
-
-These same verbs are okay when the noun receiving the action is a tangible thing instead of a verb converted to a noun. These strong statements don't need rewriting:
-
-* The bug **caused** the failure.
-* The scheduler **performed** the task.
-* The script **produced** the CSV file.
-* The API **obtained** the data.
-
-## More Examples
-
-These weak sentences were improved by reverting the noun to its base verb form.
+Some verbs aren't inherently weak, but they become weak when acting on a nounified verb form. Some popular examples are: achieve, bring, cause, create, deliver, do, give, make, obtain, offer, perform, produce, provide, show, and take. Here are some examples of these words in weak constructions, and how they can be improved by reverting the noun to its base verb form.
 
 | Weaker Construction | Stronger Construction |
 | --- | --- |
@@ -59,8 +58,13 @@ These weak sentences were improved by reverting the noun to its base verb form.
 | The scheduled task **performed** the **synchronization** of the server. | The scheduled task **syncronized** the server. |
 | Purging old records **produced** a **reduction** in the database size. | Purging old records **reduced** the database size. |
 
+These same verbs are okay when the noun receiving the action is a tangible thing instead of a verb converted to a noun. These strong statements don't need rewriting:
+
+* The bug **caused** the failure.
+* The scheduler **performed** the task.
+* The script **produced** the CSV file.
+* The API **obtained** the data.
+
 ## Summary
 
-When writing documentation or tutorials, have empathy for the reader. They are trying to follow your instructions, and an article cluttered with weak phrases is harder to decipher. So instead, let your technical information shine through using strong verbs and statements.
-
-If following this principle makes your writing stiff and less accessible, feel free to break it. This isn't an absolute rule. However, it's essential to recognize that you are breaking the guideline and doing it deliberately for a particular purpose.
+When writing documentation or tutorials, have empathy for the reader. An article cluttered with weak phrases is hard to understand. However, if following this principle makes your writing stiff and less accessible, feel free to break it. This isn't an absolute rule, just a useful guideline.
