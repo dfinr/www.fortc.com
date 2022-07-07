@@ -1,5 +1,5 @@
 ---
-title: Boost Your Writing With Strong Action Verbs
+title: Verb all the Nouns!
 revision_date: April 01, 2022
 tags:
   - Technical Writing
@@ -9,11 +9,13 @@ tags:
 #  - footer
 ---
 
-![Featured](_media/verb-all-the-nouns.webp)
+![Featured](_media/verb-all-the-nouns.webp){ width=50% align=left loading=lazy }
 
-The best technical writing is unobtrusive, with clear sentences that don't distract the reader from the content. By removing excess word clutter and weak verbs, you can simplfy the sentence structure, which makes the material easier to understand. One way to improve your articles is by avoiding nouns derived from verbs. 
+The best technical writing is unobtrusive. When your paragraphs flow from thought to thought, using plain language and clear writing techniques, the reader won't be distracted and your message will be delivered. When you remove excess word clutter you can simplfy the sentence structure, making the content easier to understand. 
 
-## Examples of Nounified Verbs
+One way to improve your writing is by avoiding weak verbs, and one common class of these are nouns derived from verbs.
+
+## What is a Nounified Verb?
 
 What does it mean to derive a noun from a verb?
 
@@ -33,9 +35,9 @@ Some verbs can also be used as nouns without changing any spelling. For example:
 * increase
 * decrease
 
-These "nounified verbs" are often used as direct objects that receive their action from a weaker verb.
+These nounified verbs are often used as direct objects that receive their action from a weaker verb.
 
-## What's a Direct Object?
+## Okay, Grammar Man, what's a Direct Object?
 
 Consider the following example:  
 > **You can perform the software installation in one step.**

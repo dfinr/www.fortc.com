@@ -8,21 +8,18 @@ tags:
 #  - toc
 #  - footer
 ---
+![Featured](_media/conan_the_barbarian_screengrab_0001a.webp){ width=50% align=left loading=lazy } 
 
-![Featured](_media/conan_the_barbarian_screengrab_0001a.webp)
-
-I have a simple mnemonic device to remember when to use **which** and when to choose **that**. If you want the short answer, [jump to the bottom.<sup id="top">⬇️</sup>](#rule)
+I use a simple mnemonic device to remember when to use **which** and when to choose **that**. If you want the short answer, [jump to the bottom.<sup id="top">⬇️</sup>](#rule)
 
 Otherwise, let's go on a journey.
 
 ---
 
-The basic rule I was taught in school:
+Here is the basic rule I was taught in school:
 
 * **That** should be used with restrictive modifiers – a word, phrase, or clause that **is essential** to the meaning of the sentence.
 * **Which** should be used with nonrestrictive modifiers: a word, phrase, or clause – usually separated by commas – which **is not essential** to the meaning of the sentence.
-
-<em>Notice that I've broken the rule while defining it.  ¯\\\_(ツ)\_/¯</em>
 
 If you like tables, here's another version:
 
@@ -31,19 +28,19 @@ If you like tables, here's another version:
 | which    | Nonrestrictive: adds information                      | The server, **which** needs an upgrade, crashed last night. |
 | that     | Restrictive: clarifies what noun you're talking about | The server **that** crashed last night had a disk failure.  |
 
-The 1982 movie [*Conan the Barbarian*](https://www.imdb.com/title/tt0082198/) opens with a Nietzsche quote<sup id="1">[1️⃣](#fn1)</sup>, translated into English:
+The movie [*Conan the Barbarian*](https://www.imdb.com/title/tt0082198/) opens with a quote by Nietzsche<sup id="1">[1️⃣](#fn1)</sup>, which when translated into English reads:
 
 > That which does not kill us makes us stronger.
 
-This demonstrates that sometimes you **absolutely should** break this rule. The phrase "does not kill us" is restrictive – without it, the sentence becomes meaningless – but slavishly following this rule creates an awkward double-word construction:
+The phrase "does not kill us" is restrictive – without it, the sentence becomes meaningless. But, following the rule creates an awkward double-word construction:
 
-> That that does not kill us makes us stronger.
+> **That that** does not kill us makes us stronger.
 
-How do we know when it's okay to break the rule? Going deeper philosophically, should grammar prescribe the "proper" use or describe contemporary conventions? I often consider this practical question when updating this [style guide](https://www.vultr.com/docs/vultr-docs-style-guide) I maintain for a community writing program.
+The quote clearly demonstrates that there are times when you **absolutely should** break this rule. But, how do we know when it's okay to break the rule? And, who made up this rule anyway? And, going even deeper philosophically, should grammar prescribe the "proper" use or describe how it's used?
 
-Traditionally, I've been a rule follower. However, I've opened my thinking while reading *Because Internet: Understanding the New Rules of Language* by [Gretchen McCulloch](https://www.goodreads.com/book/show/36739320-because-internet). It's a fascinating dive into how people use language, and it makes a strong case against overly prescriptive grammar. I highly recommend her book.
+Traditionally, I've been a rule follower. However, this book has really opened up my thinking: *Because Internet: Understanding the New Rules of Language* by [Gretchen McCulloch](https://www.goodreads.com/book/show/36739320-because-internet). It's a fascinating dive into how people use language, and it makes a strong case against overly prescriptive grammar.
 
-I've come to a conclusion that *it depends*. We do need rules. Without rules and conventions, technical writing is challenging to decipher. But, the point of technical communication is *communication*, so we also have to adapt to contemporary usage. Things change, and we need to adapt to how people actually read and learn.
+After reading that, I think that *it depends*. We do need rules. Without rules and conventions, technical writing is challenging to decipher. But, the point of technical communication is *communication*, so we also have to adapt to the contemporary usage. Things change, and we need to adapt to how people actually read and learn.
 
 For example, I cringe at phrases in documentation like "*head on over to [some URL]*," which I think should be written as, "*navigate to [some URL] in your web browser*." But, if I try to enforce my personal bias, I look like the people who still insist we should teach children cursive handwriting.
 
@@ -79,17 +76,21 @@ Thoreau warned us about grammar fools 46 years before the Fowler brothers decide
 
 #### Because...
 
-**_Rules provide ſtructure and uſually have a reaſonable purpoſe. But, I think it's okay to eaſe up on ſome when it facilitates clear communication. Above all, technical writing ſhouldn't draw attention to itſelf. There's [a reaſon](https://www.historyofinformation.com/detail.php?id=2344) we don't use the [long ſ](https://en.wikipedia.org/wiki/Long_s) anymore._**
+**_[Rules provide ſtructure and uſually have a reaſonable purpoſe. But, I think it's okay to eaſe up on ſome when it facilitates clear communication. Above all, technical writing ſhouldn't draw attention to itſelf. There's a reaſon we don't use the long ſ anymore.](https://en.wikipedia.org/wiki/Long_s)_**
 
 <span id="rule"></span>
 
 ## The Short Answer
 
-This has been an overly-complicated exploration of a simple question. Thanks for reading. 🙏 Here's the short version: I use a mnemonic device to remember how to form non-restrictive phrases.
+This has been an overly-complicated exploration of a simple question, so thanks for reading. 🙏 
+
+Here's the short version:
 
 <em>If the phrase can be tossed out like a sand**wich** wrapper, use **which**.</em>
 
-On the other hand, either one is fine for a restrictive phrase. Use the one that sounds best, and don't worry. <sup>[Back to top ⬆️](#top)</sup>
+On the other hand, either one is fine for a restrictive phrase. Use the one that sounds best, and don't worry. 
+
+<sup>[Back to top ⬆️](#top)</sup>
 
 ---
 

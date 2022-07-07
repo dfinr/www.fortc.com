@@ -9,28 +9,26 @@ tags:
 #  - footer
 ---
 
-![Featured](_media/hand-guitar-tool-leg-hammer-nail-963281-pxhere.com.webp)
+**Utilise** sounds like a fancy version of **use**, but the words mean different things.
 
-Many articles that cross my editing desk contain the word **utilize**, when the author really meant **use**. For example, statements like this:
+![Featured](_media/hand-guitar-tool-leg-hammer-nail-963281-pxhere.com.webp){ width=50% align=left loading=lazy }
 
-> The server can utilize 16 GB RAM modules.  
-> Nginx can utilize SSL/TLS certificates for encryption.  
-> Linux will utilize a swap file if it's available. 
+* **Use** means to employ for some purpose or put into service.  
+    **_You use a knife to cut a sandwich_**.
 
-_Utilise_ sounds like a fancy version of _use_, but they actually mean different things.
+* **Utilize** means to use something beyond its intended purpose.  
+    **_You utilize a knife as a screwdriver_**.
 
-## Use
+I edit hundreds of articles each year for Vultr's documentation library, and many authors substitute _utilize_ for _use_. I think it may be a misguided attempt to sound more "professional". But, take heart &mdash; there's no need to fluff up your documentation because _use_ is a perfectly fine word. Here are more examples:
 
-**Use** can be a noun or a verb.  
+### This is incorrect
 
-* **As a noun**, it means the act of employing or putting into service: *the use of tools.*  
-* **As a verb**, it means to employ for some purpose or put into service: *to use a knife.*
+* _The webserver can **utilize** 16 GB RAM modules as main system memory._ 
 
-## Utilize
+Because the RAM is being employed for its intended purpose, it is being **used**, not **utilized**.
 
-**Utilize** is always a verb. Utilize means to use something *beyond its intended purpose*. 
+### This is correct
 
-For example, if you are speaking about a knife:
+_You can utilize a newspaper as a flyswatter._ 
 
-* You *use* the knife to cut a sandwich.
-* You *utilize* the knife as a screwdriver.
+The newspaper's intended purpose is to publish news, but newspapers are often utilized for many unintended purposes.

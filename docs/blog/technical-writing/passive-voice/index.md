@@ -9,74 +9,96 @@ tags:
 #  - footer
 ---
 
-![Featured](_media/pexels-chris-clark-5604850-1600x600.webp)
+![Featured](_media/pexels-chris-clark-5604850-1600x600.webp){ width=50% align=left loading=lazy }
 
-This might be the only article you've read about the passive voice that doesn't use [the z-word](https://www.google.com/search?hl=en&q=passive voice "by zombies"). That's a classic tip, but you'll find dozens of other articles that mention those fictional monsters. 
+Most technical writing guides suggest you "write in second-person" or "use active voice." I wrote a [style guide for Vultr](https://www.vultr.com/docs/vultr-docs-style-guide) with those instructions, and published [a Markdown toolkit](https://github.com/vultr/vultr-mdtk/blob/main/styles/Vultr/Passive.yml) that includes a Vale linting rule for active voice &mdash; which is great for anyone doing Docs-as-Code.  I've read and written a lot about active voice, and in my research, I haven't found many guides explaining when it's okay or even preferred to use passive voice. So, I thought it would be an excellent time to talk about a few exceptions to the active voice rule.
 
-This article explains when you *should* use the passive voice instead of lecturing you about the benefits of the active voice. 
+Here are times when you _should_ use the passive voice in technical writing.
 
-## What is the passive voice?
+## What are active and passive voice?
 
-A sentence written in passive voice usually follows this formula:
+First, let's refresh on how to identify the voice of a sentence.
 
-**[the thing receiving action] + [a version of verb to be] + [past participle of a verb] + [by the thing doing the action]**
+A **passive voice** sentence, such as "The server was rebooted by the administrator," usually follows this structure:
 
-So, for example, something like this:
+| Part of speech  |  Example  |
+| --| -- |
+| The thing receiving action | The server |
+| A version of verb _to be_ | was |
+| Past participle of a verb | rebooted |
+| The thing doing the action (optional) | by the administrator. |
 
-**[The server] [was] [rebooted] [by the administrator].**
+An **active voice** sentence moves the thing performing the action into the subject. In a simple present tense sentence, the structure looks like this:
 
-The prepositional phrase at the end is optional. If you left that out, the sentence would become, "The server was rebooted." But, now it's unclear what rebooted the server.
+| Part of speech  |  Example  |
+| --| -- |
+| The thing doing the action | The administrator |
+| Present tense of a verb | rebooted |
+| The thing receiving the action | the server. |
 
-That same statement in active voice is unambiguous: "**The administrator rebooted the server.**" Most style guides, including [the one I wrote](https://www.vultr.com/docs/vultr-docs-style-guide), recommend using active voice most of the time. 
+## Why is active voice preferred?
 
-Many English speakers tend to speak in the passive voice habitually. Because I write my first drafts the same way I talk, I usually litter them with passive sentences. When I clean those up I don't blindly change everything to active voice — sometimes I deliberately use passive voice.
-
-## When *should* you use passive voice?
-
-It's a judgment call. In case of doubt, active voice is usually better. But, as you get into the editing habit, you'll find cases when passive voice works better in specific situations. Here are some reasons to consider.
+Active voice is usually shorter, more direct, and easier to understand. But, sometimes passive voice works better. Here are a few specific situations.
 
 ### To shift emphasis
 
-The subject of a sentence carries more weight. When the noun receiving the action is more important than the actor, passive voice is a better choice. 
+If the thing receiving action is more important that what did it, you may want to move it into the subject of the sentence, which carries more weight. We care more about a city full of people than the volcano, so the sentence that mentions the city first is preferred.
 
-"*A volcano buried Pompeii*," doesn't have the same impact as the passive version, "**Pompeii was buried by a volcano.**" 
+**Pompeii was buried by a volcano.**
 
-If you want to describe *which database* to purge, it makes sense to say, "**The employee database is purged by the monthly cleanup script.**" However, if you need to explain *what purges* the database, stick to the active voice: "**The monthly cleanup script purges the employee database.**"
+"A volcano buried Pompeii," is a weaker statement. It only makes sense to mention the volcano first if you are mentioning it by name, and also probably a volcanologist. 
+
+Likewise, if you want to describe **which database** to purge, it makes sense to say, "The employee database is purged by the monthly cleanup script." However, if you need to explain **what purges** the database, stick to active voice, "The monthly cleanup script purges the employee database."
 
 ### When the actor is unknown
 
-Passive voice may be better if you don't know who or what is acting, or it's not essential to the topic. An article discussing the maintenance of an employee database might say, "**The employee database is purged each month.**" It's straightforward, and unless you are trying to solve a mystery, it's probably best to avoid forcing the awkward active voice construction, "*An unknown process purges the employee database each month.*"
+Sometimes you don't know who or what is doing the action and trying to force it into the sentence results in something awkward like, "An unknown process purges the employee database each month," which is just awful. Passive voice is often a better choice when you don't know what process is purging the employee database. 
+
+"**The employee database is purged each month,**" is a straightforward statement, and perfectly fine.
 
 ### To avoid assigning blame or to obscure information
 
-Error messages often avoid blaming the user. You've probably seen messages like, "**A phone number wasn't entered**," when filling out a form, and it's a better choice than the active version, "*You didn't enter a phone number*," which sounds a little harsh.
+Software error messages are famous for their attempts to avoid blaming the user. You've probably seen messages like, "**A phone number wasn't entered**," when filling out a form. A website processing a payment would pefer not to use the more blunt, perhaps more honest response, "You didn't enter a phone number," which sounds a little harsh.
 
-Passive voice is also a popular way to obscure data in an error message. If you want to avoid leaking information to attackers, "**The account was not found**," is more secure than "*SRV27 did not find ACCOUNT_ID in the CUSTOMER table*."
+Passive voice is also a popular way to obscure data in an error message. If you want to avoid leaking information to attackers, a message like `The account was not found` is more secure than `SRV27 did not find ACCOUNT_ID in the CUSTOMER table.`
 
 ### When the actor is obvious
 
-Sometimes the actor is obvious. If you say, "**The web page is reloaded after five minutes**," it's probably obvious that a web browser will reload the web page. It's straightforward, while the active version, "*The web browser reloads the web page after five minutes,*" is redundant.
+Sometimes the actor is obvious. If you say, "**The web page is reloaded after five minutes**," it's probably obvious that a web browser will reload the web page. It's straightforward. The active version, "The web browser reloads the web page after five minutes," is redundant.
 
 ### To state a general truth
 
-"**Most passenger cars are designed for paved roads.**" 
+**Most passenger cars are designed for paved roads.**
 
-There's no need to shoehorn the history of car designers into that sentence. Leaving it as a passive statement is preferred.
+There's no need to shoehorn the history of car designers into that sentence. "Automobile designers and engineers design most passenger cars for paved roads," is a silly alternative. It's a general statement and leaving it as a passive statement is preferred.
+
+## Other situations
+
+These are not the only times you'll make a judgement call, they are just a few common situations I've noticed. When I encounter an awkward sentence while editing, I rephrase it both ways to see which is easier to understand.
 
 ## Tips for identifying passive voice
 
-The first step to using the passive voice effectively is to learn how to distinguish between active and passive sentences.
+Learning how to distinguish between active and passive voice is the first step to using them effectively. 
 
-Forms of the verb *"to be"* are integral to passive voice, so search your article for **is**, **am**, **are**, **was**, **were**, **be**, **being**, and **been**, then review those sentences to see if you can improve them. 
+### To be
 
-Because it's common to omit the prepositional phrase in passive sentences, try finishing them with "…by (plural noun of your choice)." I like to use "**…by Smurfs**", but you could use ferrets, rubber ducks, Minions, or even the [z-word](https://www.google.com/search?hl=en&q=passive voice "by zombies") if it makes you happy. Here are some examples:
+One good tip is to search your article for forms of the verb _"to be"_, because those are integral to passive voice constructions. Look for **is**, **am**, **are**, **was**, **were**, **be**, **being**, and **been**. These are usually found in passive voice sentences, so review those and look for improvements.
 
-> The server has been rebooted. (…by Smurfs.)
->
-> The meeting is being rescheduled. (…by Smurfs.)
->
-> The transaction was canceled. (…by Smurfs.)
+!!! Tip "Tip for Docs-as-Code Fans"
+    The Markdown Toolkit has [a nice passive-voice linting test](https://github.com/vultr/vultr-mdtk) that uses this search as a regular expression. It works in Visual Studio Code, and you can export the rule to any platform Vale Server supports, including Google Docs.
 
-If you can complete a sentence this way, it's written in passive voice. And that's not a necessarily bad thing, as long as you know why you did it. 
+### ...by Smurfs
 
-As a rule, you should write technical articles in the active voice unless you are deliberately choosing the passive voice for a good reason. Pay attention to your choice of voice, and your articles will be crisp and easy for the readers to understand.
+Another common pattern with passive voice sentences is the practice of omitting the prepositional phrase at the end. If you can add one, such as "…by Smurfs," and it makes sense, then you probably have a passive voice sentence.[^1] For example:
+
+* The server has been rebooted. (…by Smurfs.)
+* The meeting is being rescheduled. (…by Smurfs.)
+* The transaction was canceled. (…by Smurfs.)
+
+If you can complete a sentence this way, it's written in passive voice. And that's not a necessarily bad thing, as long as you know why it's written that way and it was done on purpose.
+
+## Summary
+
+As a rule, you should write technical articles in active voice unless you have a good reason. But, there are some good reasons, so pay attention to your choice of voice and your articles will be crisp and easy for the readers to understand.
+
+[^1]: Or, you can use any plural noun of your choice. A lot of guides suggest "by zombies." I like Smurfs better, but you could use ferrets, rubber ducks, or even Minions if it makes you happy.

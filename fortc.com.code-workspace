@@ -22,7 +22,7 @@
         "markdownlint.run": "onSave",
         "vale.core.useCLI": true,
         "files.autoSave": "afterDelay",
-        "files.autoSaveDelay": 5000,
+        "files.autoSaveDelay": 3000,
         "editor.useTabStops": false,
         "editor.detectIndentation": false,
         "github.copilot.enable" : {
