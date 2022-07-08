@@ -9,17 +9,19 @@ tags:
 #  - footer
 ---
 
-## Covert a Rancilio Rocky to Doserless
-
 I didn't like the doser attachment on my coffee grinder. Here's how I replaced it with my own design.
 
-A few years ago I ran a small coffee roasting business on the side and needed a medium-duty grinder. I chose the Rancilio Rocky, which comes in two configurations: with or without an espresso doser. I chose the doser model.
+![Doser Model](media/rancilio-rocky-black-side.jpg){ width=50% align=left loading=lazy } 
 
-![Doser Model](media/rancilio-rocky-black-side.jpg)
+A few years ago I ran a small coffee roasting business on the side, and I needed a medium-duty grinder. I chose the Rancilio Rocky, which comes in two configurations: with or without an espresso doser. I chose the doser model, because I thought I'd be drinking a lot of espresso, I suppose.
 
-However, I discovered that I wasn't making much espresso and the doser was annoying. I considered buying the official parts to convert it to doserless, but I didn't like the configuration of the chute. It looked hard to clean and people reported static cling issues with the plastic.
+<br clear="all" />
 
-![Doserless Model](media/DoserlessModel.png)
+![Doserless Model](media/DoserlessModel.png){ width=50% align=left loading=lazy }
+
+However, I discovered that I wasn't making much espresso and the doser was annoying. To the left is a photo of the doserless factory model. I knew where to buy the OEM parts and do the conversion, but I didn't like the configuration of the chute. It looked hard to clean. People on the forums reported static cling issues with the plastic.
+
+<br clear="all" />
 
 I decided to design my own doserless conversion. Inspired by the shape of the spout on a salt container, I made several cardboard templates. After a lot of trial and error in cardboard, I came up with this design:
 

@@ -3,7 +3,7 @@ title: "Resume"
 revision_date: June 11, 2022
 hide:
   - navigation
-  - toc
+#  - toc
   - footer
 ---
 

@@ -18,7 +18,7 @@ tags:
 
 I needed a small pedalboard for the spare bedroom. I don't play on stage and when I drag my equipment to a friend's house, it needs to be as portable as possible. Everything I found online was too big and expensive for what I needed.
 
-One day I stepped out of the shower, looked down at the bamboo showermat, and suddenly realized that would be perfect, if I could find one painted black so the velcro would stick better. A quick search turned this one up:
+One day I stepped out of the shower, looked down at the bamboo showermat, and realized the mat would be perfect, if I could find one with a smooth surface, hopefully painted black, so the velcro would stick better. I did a quick online search and turned this one up:
 
 <figure markdown>
 ![Bath Mat](media/bathmat.png){ loading=lazy }

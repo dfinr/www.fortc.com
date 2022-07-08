@@ -37,7 +37,7 @@ Some verbs can also be used as nouns without changing any spelling. For example:
 
 These nounified verbs are often used as direct objects that receive their action from a weaker verb.
 
-## Okay, Grammar Man, what's a Direct Object?
+## Okay, what's a Direct Object?
 
 Consider the following example:  
 > **You can perform the software installation in one step.**
