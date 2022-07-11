@@ -1,9 +1,9 @@
 title: Projects
-hide: true
+hide: false
 collapse_single_pages: true
 
 nav:
+    - docs-as-code
     - mdtk
     - api
-    - docs-as-code
     - style-guide
