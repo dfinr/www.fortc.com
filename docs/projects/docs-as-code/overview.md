@@ -11,9 +11,7 @@ revision_date: June 19, 2022
 
 # Doc-as-Code Overview
 
-Documentation as Code is a method of writing documentation using the same tools as a typical software development project.
-
-In a [Docs-as-Code](https://www.writethedocs.org/guide/docs-as-code/) workflow, you'll use:
+[Docs-as-Code](https://www.writethedocs.org/guide/docs-as-code/) is a method of writing documentation using the same tools as a typical software development project, like:
 
 * Issue trackers
 * Version control
@@ -21,40 +19,36 @@ In a [Docs-as-Code](https://www.writethedocs.org/guide/docs-as-code/) workflow, 
 * Code reviews
 * Automated tests
 
-Docs-as-Code facilitates an environment where technical writers and software developers both feel ownership of the documentation.
+When technical writers use the same tools as software developers, it facilitates an environment where both teams feel ownership of the documentation and make asynchronous updates with their native tools. Often, the developers make a first draft of core documentation and hand that off to the technical communications team as Markdown files in Git. The technical communications team uses the draft material to develop FAQs, quickstarts, and reference guides. The documentation review cycle works exactly like traditional code review, with a full fork-branch-merge request workflow.
 
-At my current position, we do not use a Docs-as-Code workflow, and the technical writers are often quite remote from the development process. I've been building a prototype system to demonstrate at work, which has led me to experiment with several Docs-as-Code tools, version control systems, static site generators, publishing platforms, and Markdown variants.
+For the past year or so I've experimented with many tools and I have enough experience to share in a short blog post. Here's a quick overview of the major steps in my workflow.
 
-I've worked with these tools recently in my quest:
+![Publishing Pipeline](_media/publishing-pipeline.svg)
 
 ### Issue Trackers
 
-I've tried working with Notion, Redmine, and Jira.
+The issue tracking system you choose will depend mostly on whatever system you already use. There's nothing in a Docs-as-Code workflow that dictates the issue tracking tool. I've tried working with Redmine, Notion, and Jira. **Redmine** is dreadful. Just avoid this at all costs. **Notion** is super flexible. With some custom formulas and creative views, you can use Notion as a simple project management system. I built a reasonably complex workflow in Notion, but I ran into some limits with custom rules and field validation. Overall, it was capable, and it's inexpensive if you are willing to learn how to build Notion templates. Or, you can pay for templates and hire Notion consultants.
 
-**Redmine** is dreadful. Just avoid this at all costs.
-
-**Notion** is super flexible. With some custom formulas and some creative views, you can make Notion into a fairly powerful project management system. I built a reasonably complex workflow in Notion. I wish it had more rules and field validation, but it was fairly capable. It's inexpensive if you are willing to write some formulas, or you can pay for templates and hire Notion consultants.
-
-**Jira** is super powerful. After we adopted Jira at work, I migrated off Notion as fast as possible and built a Jira workflow. Primarily, I was looking for compatibility with the rest of the company. Up to this point, I had been using Notion while the rest of the company was on Redmine. After we started using Jira company-wide, the synergy was attractive enough to justify re-building the workflow in Jira, even if that required copying all the Notion work-in-process to new Jira issues. I'm cautiously optimistic that Jira can manage a large Docs-as-Code system. The instance I have access to doesn't currently have Git integration, which would be ideal.
+**Jira** is... Well, it's Jira. And it's pretty good, even though it sucks. The point is, your choice of tool here doesn't really matter as long as it works for you.
 
 ### Version Control
 
-The system works equally well with local `git`, a private GitLab repo inside your firewall, or a public GitHub repository.
+I've focused on Git and GitHub, and use the GitHub runner for Vale lint the site during a merge request.
 
 ### Plain Text Markup
 
-This decision is usually driven by your output renderer, which is often a static site generator like Hugo, MkDocs, Jekyll, or Sphinx. This typically means you have some Markdown variant for your basic formatting, or in the case of Sphinx, you use reStructuredText. Then, you often have access to various theme-specific extensions: things like admonishment boxes, or lazy-loading graphics with alignment, or captions, and many other examples. 
+Depending on your project, you are probably using some flavor of Markdown or reStructuredText. Markdown comes in many flavors, but GitHub flavor and Commonmark are very popular. Your choice of static-site generator and theme will usually allow some custom markup as well for things like admonishment boxes, graphics with alignment and captions, extended table formatting, and many other examples. These extensions create a potential for lock-in. I've switched themes several times on this website, and it's always a lot of toil reformatting posts and changing out image shortcodes. This is a fairly small site so, if you are planning a large documentation site, you should run a few simple trials with different static-site-generators before you commit. If you decide later to switch from Hugo to MkDocs, it may be a fair amount of work.
 
-All of these small decisions -- what renderer to use, what theme extensions to use -- dictate enough changes in your plain text that you are effectively locked-in to that environment. Even if we rule out reStructuredText and only focus on Markdown, each system uses different macros and parameter syntax. Hugo's shortcodes are very different than the python-ish style of MkDocs, even when the base Markdown flavor is the same.
+I've experimented with Hugo, MkDocs, Jekyll, and Sphinx, and although I see strengths in all of them, MkDocs is suiting my needs right now. Mostly, that's because I'm not as tempted to jump in and start coding new features like I was with Hugo. I can just focus on writing.
 
-I've re-coded parts of this website through several generations using most of the tools I've mentioned, and it was a significant amount of toil. I started early-on with MkDocs and the Material theme. It was full-featured and had a rich set of extensions. The only drawback was that it looked really *the same as every other doc site on the net*. So, I decided I'd see what else I could find and learn more. 
+## Editing
 
-I moved to Hugo, and worked my way through several themes. I re-wrote a good portion of one theme and built my own dynamic random quote plug-in for it. There's a lot to like about Hugo. I think it's a solid contender for my employer, but I wanted to spend more time writing than working on the Hugo theme. So, I again looked around for a nice out-of-the-box experience. 
+I use Visual Studio Code to edit Markdown. I've collected [a set of plugins and configurations](https://github.com/vultr/vultr-mdtk) that provide Markdown linting and real-time feedback on formatting and style issues. To generate the site preview, I run `mkdocs serve` in VSCode's terminal and watch the local site in a web browser while I edit.
 
-I tried a lot of them. And I didn't want to just give up and go back to MkDocs/Material... but after three months of nights and weekend playing with static site generators, here I am. It's actually a great system, once you enable a few navigation features. More about that later.
+## Code Reviews
 
-The point being: Before committing a large project to Docs-as-Code, you should roll out a very small demo site in more than one framework and compare the experience and features. I only had a small site, and it was work to move to Hugo and back. I had to reformat and re/write a lot of table code and image macros, and some other things. You want to be sure of your chosen framework before you commit a large project to it.
+I edit the site in a `draft` branch. When I think it looks good I push that branch to my public GitHub repo. Netlify notices the new branch and triggers a draft site build, which I review at a private URL.
 
-## Code Reviews and Automated Tests
+## Automated Tests
 
-Vale and GitHub Actions provide
+Merging the draft branch to `main` triggers a Vale GitHub action, which scans the repo with a custom rule set, linting for grammar and other style guide issues. If the Vale report is approved and the merge request completes, Netlify builds a new public site from the main branch.
